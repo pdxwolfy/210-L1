@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <script>
+      var apples = 3;
+      var bananas = 5;
+      if (apples == bananas) {
+        console.log('[1] Equal!');
+      }
+
+      bananas = '3';
+      if (apples == bananas) {
+        console.log('[2] Equal!');
+      }
+
+      if (apples === bananas) {
+        console.log('[3] Equal!');
+      } else {
+        if (apples == bananas) {
+          console.log('[3.1] Numbers are equal but have different types.');
+        } else {
+          console.log('[4] Not!');
+        }
+      }
+    </script>
+  </body>
+</html>
